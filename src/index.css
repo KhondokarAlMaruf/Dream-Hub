@@ -13,7 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+.body {
+  margin-left: 200px;
+  margin-right: 200px;
+}
 a {
   font-weight: 500;
   color: #646cff;
