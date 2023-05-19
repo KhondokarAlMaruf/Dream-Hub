@@ -8,7 +8,54 @@
   gap: 20px;
 }
 .feature {
-  border: 1px solid #e8e8e8;
+  border: 1px solid #7e90fe;
   border-radius: 8px;
   padding: 30px;
+}
+.feature h3 {
+  font-weight: 800;
+  font-size: 24px;
+}
+.remote-time {
+  display: flex;
+}
+.location-salary {
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #757575;
+}
+.btn-view {
+  color: #ffffff;
+  width: 157px;
+  height: 49px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 4px;
+}
+.company-name {
+  font-weight: 600;
+  font-size: 20px;
+  color: #757575;
+}
+.remote {
+  width: 100px;
+  font-weight: 800;
+  font-size: 16px;
+  height: 40px;
+  border: 2px solid #7e90fe;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.time {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 16px;
+  border: 2px solid #7e90fe;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 5px;
 }

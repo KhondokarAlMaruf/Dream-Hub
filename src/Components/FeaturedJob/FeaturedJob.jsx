@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./FeaturedJob.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faSackDollar } from "@fortawesome/free-solid-svg-icons";
 
 const FeaturedJob = () => {
   const [featured, setfeatured] = useState([]);
@@ -24,25 +27,31 @@ const FeaturedJob = () => {
           <div key={feature.id} className="feature">
             <img src={feature.companyLogo} alt="" />
             <h3>{feature.jobTitle}</h3>
-            <p>{feature.companyName}</p>
+            <p className="company-name">{feature.companyName}</p>
 
-            <div>
-              <div>
+            <div className="remote-time">
+              <div className="remote">
                 <p>{feature.remoteOrOnsite}</p>
               </div>
-              <div>
+              <div className="time">
                 <p>{feature.fulltimeOrPartTime}</p>
               </div>
             </div>
-            <div>
+            <div className="location-salary">
               <div>
-                <p>{feature.location}</p>
+                <p>
+                  <FontAwesomeIcon icon={faLocationDot} />
+                  {feature.location}
+                </p>
               </div>
               <div>
-                <p>Salary :{feature.salary}</p>
+                <p>
+                  <FontAwesomeIcon icon={faSackDollar} />
+                  Salary:{feature.salary}
+                </p>
               </div>
             </div>
-            <button>View Details</button>
+            <button className="btn-view">View Details</button>
           </div>
         ))}
       </div>
