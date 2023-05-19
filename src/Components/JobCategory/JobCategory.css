@@ -1,0 +1,45 @@
+.job h2 {
+  font-weight: 800;
+  font-size: 48px;
+}
+.job p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #757575;
+}
+.job {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.job-section {
+  border: 1px solid #a3a3a3;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
+  border-radius: 8px;
+  width: 311px;
+  height: 243px;
+  padding: 40px;
+}
+.job-section img {
+  width: 40px;
+  height: 40px;
+}
+.job-section h2 {
+  margin-top: 30px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.job-section p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a3a3a3;
+}
+.job-container {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 80px;
+}

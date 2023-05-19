@@ -4,6 +4,7 @@ import { useState } from "react";
 // import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
+import JobCategory from "./Components/JobCategory/JobCategory";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <div className="body">
       <Navbar></Navbar>
       <Header></Header>
+      <JobCategory></JobCategory>
     </div>
   );
 }

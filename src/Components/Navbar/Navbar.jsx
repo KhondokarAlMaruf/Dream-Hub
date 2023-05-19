@@ -6,6 +6,7 @@ const Navbar = () => {
     <div className="nav">
       <h3 className="header">DreamHub</h3>
       <div className="link">
+        <a href="">Home</a>
         <a href="">Statistics</a>
         <a href="">Applied Jobs</a>
         <a href="">Blog</a>
