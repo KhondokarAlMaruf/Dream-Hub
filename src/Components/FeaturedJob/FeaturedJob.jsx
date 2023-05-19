@@ -19,10 +19,30 @@ const FeaturedJob = () => {
           need. Its your future
         </p>
       </div>
-      <div>
+      <div className="feature-container">
         {featured.map((feature) => (
-          <div key={feature.id}>
-            <h2>{feature.id}</h2>
+          <div key={feature.id} className="feature">
+            <img src={feature.companyLogo} alt="" />
+            <h3>{feature.jobTitle}</h3>
+            <p>{feature.companyName}</p>
+
+            <div>
+              <div>
+                <p>{feature.remoteOrOnsite}</p>
+              </div>
+              <div>
+                <p>{feature.fulltimeOrPartTime}</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p>{feature.location}</p>
+              </div>
+              <div>
+                <p>Salary :{feature.salary}</p>
+              </div>
+            </div>
+            <button>View Details</button>
           </div>
         ))}
       </div>
