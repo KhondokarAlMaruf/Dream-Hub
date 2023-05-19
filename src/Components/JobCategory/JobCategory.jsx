@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./JobCategory.css";
+import { key, keys } from "localforage";
 
 const JobCategory = () => {
   const [jobs, setJobs] = useState([]);
@@ -19,7 +20,7 @@ const JobCategory = () => {
       </div>
       <div className="job-container">
         {jobs.map((job) => (
-          <div className="job-section">
+          <div key={job.id} className="job-section">
             <img src={job.logo} alt="" />
             <h2>{job.name}</h2>
             <p>{job.job}</p>

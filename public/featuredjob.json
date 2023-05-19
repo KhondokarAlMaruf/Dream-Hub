@@ -1,0 +1,110 @@
+[
+    {
+      "id": "1",
+      "companyLogo": "https://example.com/company1_logo.png",
+      "jobTitle": "Software Engineer",
+      "companyName": "ABC Technologies",
+      "remoteOrOnsite": "Remote",
+      "location": "Any",
+      "fulltimeOrPartTime": "Full-time",
+      "salary": "$80,000 - $100,000",
+      "jobDescription": "ABC Technologies is seeking a skilled Software Engineer...",
+      "jobResponsibility": "Develop and maintain high-quality software...",
+      "educationalRequirements": "Bachelor's degree in Computer Science or related field...",
+      "experiences": "2+ years of experience in software development...",
+      "contactInformation": {
+        "phone": "+1 (123) 456-7890",
+        "email": "jobs@abctech.com"
+      }
+    },
+    {
+      "id": "2",
+      "companyLogo": "https://example.com/company2_logo.png",
+      "jobTitle": "Marketing Manager",
+      "companyName": "XYZ Corporation",
+      "remoteOrOnsite": "Onsite",
+      "location": "New York, NY",
+      "fulltimeOrPartTime": "Full-time",
+      "salary": "$70,000 - $90,000",
+      "jobDescription": "XYZ Corporation is looking for an experienced Marketing Manager...",
+      "jobResponsibility": "Develop and execute marketing strategies...",
+      "educationalRequirements": "Bachelor's degree in Marketing or related field...",
+      "experiences": "5+ years of marketing experience...",
+      "contactInformation": {
+        "phone": "+1 (987) 654-3210",
+        "email": "careers@xyzcorp.com"
+      }
+    },
+    {
+      "id": "3",
+      "companyLogo": "https://example.com/company3_logo.png",
+      "jobTitle": "Graphic Designer",
+      "companyName": "Design Studio Inc.",
+      "remoteOrOnsite": "Onsite",
+      "location": "Los Angeles, CA",
+      "fulltimeOrPartTime": "Part-time",
+      "salary": "$25 - $35 per hour",
+      "jobDescription": "Design Studio Inc. is seeking a creative Graphic Designer...",
+      "jobResponsibility": "Create visually appealing designs for various mediums...",
+      "educationalRequirements": "Associate or Bachelor's degree in Graphic Design or related field...",
+      "experiences": "2+ years of experience in graphic design...",
+      "contactInformation": {
+        "phone": "+1 (555) 123-4567",
+        "email": "designjobs@designstudio.com"
+      }
+    },
+    {
+      "id":"4",
+      "companyLogo": "https://example.com/company4_logo.png",
+      "jobTitle": "Sales Representative",
+      "companyName": "Sales Producers Ltd.",
+      "remoteOrOnsite": "Remote",
+      "location": "Any",
+      "fulltimeOrPartTime": "Full-time",
+      "salary": "Commission-based",
+      "jobDescription": "Sales Producers Ltd. is seeking motivated Sales Representatives...",
+      "jobResponsibility": "Identify and pursue new sales opportunities...",
+      "educationalRequirements": "High school diploma or equivalent...",
+      "experiences": "1+ year of sales experience...",
+      "contactInformation": {
+        "phone": "+1 (777) 987-6543",
+        "email": "sales@salesproducers.com"
+      }
+    },
+    {
+      "id": "5",
+      "companyLogo": "https://example.com/company5_logo.png",
+      "jobTitle": "Data Analyst",
+      "companyName": "Data Insights Co.",
+      "remoteOrOnsite": "Remote",
+      "location": "Any",
+      "fulltimeOrPartTime": "Full-time",
+      "salary": "$60,000 - $80,000",
+      "jobDescription": "Data Insights Co. is looking for a skilled Data Analyst...",
+      "jobResponsibility": "Analyze and interpret complex data sets...",
+      "educationalRequirements": "Bachelor's degree in Statistics, Mathematics, or related field...",
+      "experiences": "3+ years of experience in data analysis...",
+      "contactInformation": {
+        "phone": "+1 (111) 222-3333",
+        "email": "careers@datainsightsco.com"
+      }
+    },
+    {
+      "id": "6",
+      "companyLogo": "https://example.com/company6_logo.png",
+      "jobTitle": "Customer Support Representative",
+      "companyName": "Support Solutions Inc.",
+      "remoteOrOnsite": "Remote",
+      "location": "Any",
+      "fulltimeOrPartTime": "Part-time",
+      "salary": "$15 - $20 per hour",
+      "jobDescription": "Support Solutions Inc. is seeking friendly and dedicated Customer Support Representatives...",
+      "jobResponsibility": "Assist customers with inquiries and provide exceptional support...",
+      "educationalRequirements": "High school diploma or equivalent...",
+      "experiences": "No prior experience required...",
+      "contactInformation": {
+        "phone": "+1 (999) 888-7777",
+        "email": "supportjobs@supportsolutions.com"
+      }
+    }
+  ]
