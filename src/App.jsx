@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div className="body">
-      <Navbar></Navbar>
       <Header></Header>
       <JobCategory></JobCategory>
       <FeaturedJob></FeaturedJob>

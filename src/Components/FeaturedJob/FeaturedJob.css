@@ -26,12 +26,32 @@
   font-size: 20px;
   color: #757575;
 }
+.btn-view:hover {
+  color: black;
+}
 .btn-view {
   color: #ffffff;
   width: 157px;
   height: 49px;
   background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
   border-radius: 4px;
+}
+.btn-see-all:hover {
+  color: black;
+}
+.btn-see-all {
+  margin-top: 50px;
+
+  color: #ffffff;
+  width: 157px;
+  height: 49px;
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 4px;
+}
+.btn-see-all-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .company-name {
   font-weight: 600;
@@ -58,4 +78,7 @@
   border-radius: 4px;
   padding-left: 10px;
   padding-top: 5px;
+}
+.feature-full-continer {
+  margin-bottom: 200px;
 }

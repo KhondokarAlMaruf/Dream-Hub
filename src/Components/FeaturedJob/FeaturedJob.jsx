@@ -3,6 +3,9 @@ import "./FeaturedJob.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faSackDollar } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import { Link } from "react-router";
 
 const FeaturedJob = () => {
   const [featured, setfeatured] = useState([]);
@@ -14,7 +17,7 @@ const FeaturedJob = () => {
   }, []);
 
   return (
-    <div>
+    <div className="feature-full-continer">
       <div className="job">
         <h2>Featured Jobs</h2>
         <p>
@@ -51,9 +54,18 @@ const FeaturedJob = () => {
                 </p>
               </div>
             </div>
-            <button className="btn-view">View Details</button>
+
+            <Link to={`/details/${feature.id}`} className="btn-view">
+              View Details
+            </Link>
           </div>
         ))}
+      </div>
+      <div className="btn-see-all-container">
+        <button className="btn-see-all">
+          {/* <Link to="#">See All Jobs</Link> */}
+          <a to="#">See All Jobs</a>
+        </button>
       </div>
     </div>
   );
