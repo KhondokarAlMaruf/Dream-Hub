@@ -25,7 +25,7 @@ const Details = () => {
   console.log(detail);
   return (
     <div>
-      <h2 className="job">Job Details</h2>
+      <h2 className="job-h2">Job Details</h2>
       <div className="job-details">
         <div className="information">
           <p>

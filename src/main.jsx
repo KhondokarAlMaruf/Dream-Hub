@@ -7,6 +7,7 @@ import Main from "./Components/Main/Main.jsx";
 import Details from "./Components/Details/Details.jsx";
 import AppliedJobs from "./Components/AppliedJobs/AppliedJobs.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
+import Blog from "./Components/Blog/Blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App></App>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
       },
       {
         path: "/details/:details_id",
