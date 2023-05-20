@@ -1,0 +1,39 @@
+.job-details {
+  margin: 50px 200px 50px 200px;
+  display: flex;
+  gap: 25px;
+}
+.job-details h3 {
+  border-bottom: 2px solid darkgrey;
+  padding-bottom: 15px;
+}
+.job-details p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #757575;
+}
+.information {
+  width: 840px;
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  padding: 25px;
+  margin-left: 85px;
+}
+.contact {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+  border-radius: 8px;
+  padding: 25px;
+}
+.job-span {
+  font-weight: 800;
+  font-size: 16px;
+  color: #1a1919;
+}
