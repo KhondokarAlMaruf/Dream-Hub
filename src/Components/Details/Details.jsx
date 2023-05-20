@@ -75,6 +75,7 @@ const Details = () => {
             <span className="job-span"> Address: </span>
             {location}
           </p>
+          <button className="btn-apply-now">Apply Now</button>
         </div>
       </div>
     </div>
