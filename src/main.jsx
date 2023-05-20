@@ -8,6 +8,7 @@ import Details from "./Components/Details/Details.jsx";
 import AppliedJobs from "./Components/AppliedJobs/AppliedJobs.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
 import Blog from "./Components/Blog/Blog.jsx";
+import Statistics from "./Components/Statistics/Statistics.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
       },
       {
         path: "/details/:details_id",
