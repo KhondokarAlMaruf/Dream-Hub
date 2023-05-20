@@ -28,6 +28,10 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
       },
       {
+        path: "/appliedjob",
+        element: <AppliedJobs></AppliedJobs>,
+      },
+      {
         path: "/details/:details_id",
         element: <Details></Details>,
         loader: ({ params }) =>

@@ -36,7 +36,7 @@ const Statistics = () => {
 
   return (
     <div className="statistics-container">
-      <h2>Marks of 5 Assignment</h2>
+      <h2 className="statistics-h2">Marks of 5 Assignment</h2>
       <div>
         <AreaChart width={1000} height={500} data={data}>
           <Area dataKey="marks"></Area>
