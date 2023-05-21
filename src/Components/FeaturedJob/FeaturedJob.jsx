@@ -4,29 +4,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faSackDollar } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import { Link } from "react-router";
 
 const FeaturedJob = () => {
-  const [featured, setfeatured] = useState([]);
+  const [featured, setFeatured] = useState([]);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     fetch("featuredjob.json")
       .then((res) => res.json())
-      .then((data) => setfeatured(data));
+      .then((data) => setFeatured(data));
   }, []);
 
+  const visibleCards = showAll ? featured : featured.slice(0, 4);
+
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
   return (
-    <div className="feature-full-continer">
+    <div className="feature-full-container">
       <div className="job">
         <h2>Featured Jobs</h2>
         <p>
           Explore thousands of job opportunities with all the information you
-          need. Its your future
+          need. It's your future.
         </p>
       </div>
       <div className="feature-container">
-        {featured.map((feature) => (
+        {visibleCards.map((feature) => (
           <div key={feature.id} className="feature">
             <img src={feature.companyLogo} alt="" />
             <h3>{feature.jobTitle}</h3>
@@ -50,7 +55,7 @@ const FeaturedJob = () => {
               <div>
                 <p>
                   <FontAwesomeIcon icon={faSackDollar} />
-                  Salary:{feature.salary}
+                  Salary: {feature.salary}
                 </p>
               </div>
             </div>
@@ -62,10 +67,11 @@ const FeaturedJob = () => {
         ))}
       </div>
       <div className="btn-see-all-container">
-        <button className="btn-see-all">
-          {/* <Link to="#">See All Jobs</Link> */}
-          <a to="#">See All Jobs</a>
-        </button>
+        {!showAll && (
+          <button className="btn-see-all" onClick={toggleShowAll}>
+            See All Jobs
+          </button>
+        )}
       </div>
     </div>
   );

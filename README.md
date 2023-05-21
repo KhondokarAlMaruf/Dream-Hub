@@ -1,25 +1,20 @@
-# Project Name : Car Zone
+# Project Name : DreemHub
 
-LIVE WEBSITE LINK [Car Zone](https://car-zone-f6b1a.web.app/).
+LIVE WEBSITE LINK [DreemHub](https://car-zone-f6b1a.web.app/).
 
 ## About This Project
 
-- This Project is Mainly For Buy Sell Second Hand Car
+- This Project is Mainly For Job Hunting
 
 ## Main Feature Of This Website
 
-- Applied User Authentication
-- Service websites have 3 roles - Admin, Buyer, and Seller
-- Admin can interact with All Sellers and Buyers
-- Buyer can book a car and finally purchase the car
-- This Website is Using Node Js run time and its framework express js
-- Sellers can upload a new car and he can advertise their unsold car
+- Job Listings: Display a list of available jobs with details such as company logo, job title, company name, remote or onsite work, location, full-time or part-time status, salary, job description, responsibilities, educational requirements, required experience, and contact information
+
+- Job Details Page: Provide a dedicated page for each job listing with comprehensive information, including the job description, responsibilities, educational requirements, required experience, and contact information.
+- Company Profiles: Include company logos and names, allowing users to learn more about the hiring companies and their contact information.
+- Saved Jobs: Provide a feature that allows users to save job listings they are interested in for future reference
+- Apply Now Button: Include a call-to-action button on each job listing to encourage users to apply for the position directly.
 
 ### Technology Used:
 
-HTML, CSS, Tailwind, React JS, Node JS, MongoDB, Firebase.
-
-## Admin Access
-
-adminEmail: neasher75@gmail.com
-adminPass: Nea5her
+HTML, CSS, React JS.
