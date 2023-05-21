@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -6,10 +6,11 @@ import { faSackDollar } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faTable } from "@fortawesome/free-solid-svg-icons";
-
 import { Link, useLoaderData } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 const Details = () => {
+  const [cart, setCart] = useState([]);
   const detail = useLoaderData();
   const {
     id,
@@ -22,7 +23,16 @@ const Details = () => {
     contactInformation,
     location,
   } = detail;
-  console.log(detail);
+
+  const handleApplyNow = () => {
+    // Save applied job in localStorage
+    const appliedJobs = JSON.parse(localStorage.getItem("applied-Jobs")) || [];
+    appliedJobs.push(detail);
+    localStorage.setItem("applied-Jobs", JSON.stringify(appliedJobs));
+
+    toast.success("Applied successfully!");
+  };
+
   return (
     <div>
       <h2 className="job-h2">Job Details</h2>
@@ -75,7 +85,13 @@ const Details = () => {
             <span className="job-span"> Address: </span>
             {location}
           </p>
-          <button className="btn-apply-now">Apply Now</button>
+          <Link
+            className="btn-apply-now"
+            onClick={handleApplyNow}
+            to="/appliedjob"
+          >
+            Apply Now
+          </Link>
         </div>
       </div>
     </div>

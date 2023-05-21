@@ -34,7 +34,7 @@ const FeaturedJob = () => {
         {visibleCards.map((feature) => (
           <div key={feature.id} className="feature">
             <img src={feature.companyLogo} alt="" />
-            <h3>{feature.jobTitle}</h3>
+            <h3 className=".feature-h3">{feature.jobTitle}</h3>
             <p className="company-name">{feature.companyName}</p>
 
             <div className="remote-time">

@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link to="/appliedjob">Applied Jobs</Link>
         <Link to="/blog">Blog</Link>
       </div>
-      <button className="btn">Star Applying</button>
+      <button className="btn-nav">Star Applying</button>
     </div>
   );
 };

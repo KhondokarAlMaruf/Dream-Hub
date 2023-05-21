@@ -9,6 +9,7 @@ import AppliedJobs from "./Components/AppliedJobs/AppliedJobs.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
 import Blog from "./Components/Blog/Blog.jsx";
 import Statistics from "./Components/Statistics/Statistics.jsx";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -28,16 +29,16 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
       },
       {
-        path: "/appliedjob",
-        element: <AppliedJobs></AppliedJobs>,
-      },
-      {
         path: "/details/:details_id",
         element: <Details></Details>,
         loader: ({ params }) =>
           fetch(`featuredjob.json`)
             .then((response) => response.json())
             .then((data) => data.find((job) => job.id === params.details_id)),
+      },
+      {
+        path: "/appliedjob",
+        element: <AppliedJobs></AppliedJobs>,
       },
     ],
   },
@@ -50,5 +51,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>
 );
